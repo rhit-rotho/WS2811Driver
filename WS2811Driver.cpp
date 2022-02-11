@@ -549,6 +549,10 @@ void WS2811Driver::setBrightness(uint8_t b) {
   }
 }
 
+uint8_t WS2811Driver::getBrightness() {
+  return brightness;
+}
+
 // Set the output pin number
 void WS2811Driver::setPin(uint8_t p) {
   pinMode(pin, INPUT);
